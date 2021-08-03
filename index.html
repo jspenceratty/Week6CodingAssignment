@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CD Collection Database</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="container bg-light">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="panel-title text-center">
+                My CD Collection
+            </h1>
+        </div>
+    </div>
+    <br>
+    <div id="new-cd" class="jumbotron form" style="border: solid 1px black;padding:5px;">
+        <h2>Add New CD</h2>
+        <input type="text" id="new-cd-name" class="form-control" placeholder="CD Name"><br>
+        <input type="text" id="new-cd-artist" class="form-control" placeholder="Artist"><br>
+        <button id="add-new-cd" class="btn btn-success" onclick="addNewCD(); return false;">Add CD</button>
+    </div>
+    <br>
+    <div id="existing-cds" class="jumbotron" style="border: solid 1px black; padding: 5px;">
+        <h2>CDs in Collection</h2>
+
+        <div id="cd-list">
+
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted footer">
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            My CD Collection<br>
+            Copyright © 2021 - James E. Spencer<br>
+            All Rights Reserved
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
